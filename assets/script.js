@@ -16,3 +16,19 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+
+// Sélection des flèches du carrousel
+const leftArrow = document.querySelector('#banner .arrow_left');
+const rightArrow = document.querySelector('#banner .arrow_right');
+
+//effet du click à la flèche gauche
+leftArrow.addEventListener('click', () => {
+  // changement du slide pour passer à la diapositive précédente
+  changeSlides('prev');
+});
+
+//effet du click à la flèche droite
+rightArrow.addEventListener('click', () => {
+  // changement du slide pour passer à la diapositive suivante
+  changeSlides('next');
+});
